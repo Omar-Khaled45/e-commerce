@@ -1,0 +1,69 @@
+.sidebar {
+  width: 400px;
+  height: 100vh;
+  padding: 20px;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  right: -450px;
+  z-index: 1050;
+  -webkit-box-shadow: 0px 0px 31px -14px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 31px -14px rgba(0,0,0,1);
+  box-shadow: 0px 0px 31px -14px rgba(0,0,0,1);
+  border-radius: 5px;
+  transition: .3s;
+  overflow: hidden;
+  overflow-y: auto;
+}
+@media (max-width: 576px) {
+  .sidebar {
+    width: 350px;
+  }
+  .sidebar h5 {
+    font-size: 18px;
+  }
+}
+.sidebar.show {
+  right: 0;
+}
+.sidebar .sidebar-header {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar .added-product {
+  padding: 15px 5px;
+  border-bottom: 1px solid #ddd;
+}
+.sidebar .added-product img {
+  width: 50px;
+}
+.sidebar .added-product .counter span,
+.sidebar .added-product .counter input {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar .added-product .counter input:focus {
+  border: 1px solid #ddd; ;
+  outline: none;
+}
+.sidebar input::-webkit-outer-spin-button,
+.sidebar input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sidebar .sidebar-bottom {
+  padding: 10px;
+} 
+.sidebar .sidebar-bottom div:last-child {
+  padding: 7px 12px;
+  background-color: #e71c2d;
+  border-radius: 4px;
+  color: white;
+}

@@ -1,0 +1,17 @@
+.details {
+  background-color: #ddd;
+  height: 100vh;
+}
+.details .img-container {
+  border: 1px solid #cfcfcf;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.details .info .buttons button,
+.details .info .buttons a {
+  font-weight: bold;
+}
+.details .info .buttons a {
+  border: 1px solid rgb(49, 49, 49);
+}

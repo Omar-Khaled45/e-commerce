@@ -1,0 +1,40 @@
+.products-list {
+  background-color: #ddd;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.products-list .img-container {
+  align-items: center;
+  border: 1px solid #cfcfcf;
+  min-height: 300px;
+}
+.products-list .img-container .controls {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  opacity: 0;
+  transition: all .3s;
+}
+.products-list .img-container .controls svg {
+  padding: 12px;
+  background-color: rgb(229, 228, 228);
+  border: 1px solid #b1b1b1;
+  cursor: pointer;
+  transition: .3s;
+}
+.products-list .img-container .controls svg:hover {
+  background-color: rgb(88, 82, 82);
+  color: rgb(229, 229, 229) !important;
+  border-color: rgb(88, 82, 82);
+}
+.products-list .img-container:hover .controls {
+  bottom: 10px;
+  opacity: 1;
+}
+.products-list .img-container img {
+  transition: .3s;
+}
+.products-list .img-container:hover img {
+  transform: scale(1.1);
+}
