@@ -19,7 +19,7 @@ const AppNavbar = () => {
     <header className="fixed-top bg-white">
       <Container className="py-2 d-flex justify-content-around justify-content-sm-between align-items-center">
         <h3 className="text-uppercase logo mb-0">
-          <Link className="nav-link" to="/">
+          <Link className="nav-link" to="/e-commerce">
             Store
           </Link>
         </h3>
@@ -27,7 +27,7 @@ const AppNavbar = () => {
         <nav className="navbar">
           <ul className="nav list-unstyled align-items-center">
             <li className="nav-item">
-              <Link className="nav-link text-dark p-2" to="/">
+              <Link className="nav-link text-dark p-2" to="/e-commerce">
                 Home
               </Link>
             </li>
