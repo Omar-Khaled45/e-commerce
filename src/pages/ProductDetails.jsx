@@ -46,7 +46,7 @@ const ProductDetails = () => {
                 >
                   Add to Cart
                 </button>
-                <Link to="/e-commerce" className="btn bg-white w-lg-25 mt-2">
+                <Link to="/" className="btn bg-white w-lg-25 mt-2">
                   Continue Shopping
                 </Link>
               </div>
