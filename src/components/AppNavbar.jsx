@@ -17,7 +17,7 @@ const AppNavbar = () => {
 
   return (
     <header className="fixed-top bg-white">
-      <Container className="py-2 d-flex justify-content-around justify-content-sm-between align-items-center">
+      <Container className="py-2 px-4 d-flex justify-content-around justify-content-sm-between align-items-center">
         <h3 className="text-uppercase logo mb-0">
           <Link className="nav-link" to="/e-commerce">
             Store

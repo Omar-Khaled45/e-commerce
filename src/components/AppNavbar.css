@@ -39,11 +39,6 @@
   transition: border-radius 0.5s ease;
   background: #ddd;
 }
-@media (max-width: 576px) {
-  .form {
-    width: 150px;
-  }
-}
 /* styling of Input */
 .input {
   font-size: 0.9rem;
@@ -108,6 +103,11 @@ input:not(:placeholder-shown) ~ .reset {
   transform: translateX(-50%);
   border-radius: 6px;
   border: 1px solid #bebebe;
+}
+@media (max-width: 576px) {
+  .results-wrapper {
+    min-width: 200px;
+  }
 }
 .results-wrapper li:not(:last-child) {
   margin-bottom: 1rem;

@@ -1,7 +1,6 @@
 import { useContext, useState } from "react";
 import { ProductContext } from "../context/ProductProvider";
 import { Link } from "react-router-dom";
-import { Container } from "react-bootstrap";
 
 const SearchInput = () => {
   const { products } = useContext(ProductContext);
@@ -24,14 +23,14 @@ const SearchInput = () => {
   const handleChange = (value) => {
     setValue(value);
     const searchResults = filteredProducts.filter((product) => {
-      return product.title.toLowerCase().includes(value);
+      return product.title && product.title.includes(value);
     });
 
     setResults(searchResults);
   };
 
   return (
-    <form className="form" onSubmit={(e) => e.preventDefault()}>
+    <form className="form mx-3" onSubmit={(e) => e.preventDefault()}>
       <button className="d-flex align-items-center">
         <svg
           width="17"
@@ -60,14 +59,14 @@ const SearchInput = () => {
       />
       {value && (
         <>
-          <Container className="results-wrapper">
+          <div className="results-wrapper">
             {results.length > 0 && (
               <ul className="list-unstyled mb-0">
                 {results.map((product) => {
                   return (
                     <li>
                       <Link
-                        to={`/product/${product.id}`}
+                        to={`/e-commerce/product/${product.id}`}
                         className="product-wrapper d-flex text-black text-decoration-none"
                         onClick={() => setValue("")}
                       >
@@ -91,7 +90,7 @@ const SearchInput = () => {
                 Sorry, Nothing found for "{value}"
               </h2>
             )}
-          </Container>
+          </div>
         </>
       )}
 
