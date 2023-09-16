@@ -19,7 +19,7 @@ const Product = ({ product }) => {
             fixedWidth
             onClick={() => addToCart(product, product.id)}
           />
-          <Link to={`/product/${product.id}`}>
+          <Link to={`/e-commerce/product/${product.id}`}>
             <FontAwesomeIcon
               className="view rounded-circle text-black"
               icon={faEye}
