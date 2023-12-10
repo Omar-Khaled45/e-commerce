@@ -11,8 +11,8 @@ function App() {
         <AppNavbar />
         <CartSideBar />
         <Routes>
-          <Route path="/e-commerce" element={<Home />} />
-          <Route path="/e-commerce/product/:id" element={<ProductDetails />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
         </Routes>
       </Router>
     </div>

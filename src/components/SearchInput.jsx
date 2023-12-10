@@ -66,7 +66,7 @@ const SearchInput = () => {
                   return (
                     <li>
                       <Link
-                        to={`/e-commerce/product/${product.id}`}
+                        to={`/product/${product.id}`}
                         className="product-wrapper d-flex text-black text-decoration-none"
                         onClick={() => setValue("")}
                       >
