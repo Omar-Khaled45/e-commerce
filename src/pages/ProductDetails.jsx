@@ -20,7 +20,7 @@ const ProductDetails = () => {
   });
 
   return (
-    <div className="details d-flex justify-content-center align-items-center py-5">
+    <div className="details d-flex justify-content-center align-items-center">
       <Container>
         <Row>
           <Col lg={3} md={6}>
